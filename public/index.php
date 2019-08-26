@@ -23,6 +23,8 @@ if (isset($_GET['code'])) {
     $result = $oktaApi->authorizeUser();
     if (isset($result['error'])) {
         $data['loginError'] = $result['errorMessage'];
+    } else {
+       header('Location: /');
     }
     header('Location: /');
     die();
@@ -60,6 +62,24 @@ if (isset($_REQUEST['command']) && ($_REQUEST['command'] == 'forgot_password')) 
 
 if (isset($_REQUEST['password_reset'])) {
     $data['thank_you'] = 'You should receive an email with password reset instructions';
+}
+
+if (isset($_REQUEST['super'])) {
+    if (in_array('SUPER_ADMIN', $_SESSION['roles'])) {
+        echo 'You can access this page!';
+    } else {
+        echo 'Super Admins only!';
+    }
+    die();
+}
+
+if (isset($_REQUEST['admin'])) {
+    if (in_array('Admin', $_SESSION['groups'])) {
+        echo 'You can access this page!';
+    } else {
+        echo 'Admins only!';
+    }
+    die();
 }
 
 view('home', $data);
