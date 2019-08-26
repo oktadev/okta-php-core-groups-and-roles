@@ -24,6 +24,8 @@ if (isset($_GET['code'])) {
     if (isset($result['error'])) {
         $data['loginError'] = $result['errorMessage'];
     }
+    header('Location: /');
+    die();
 }
 
 if (isset($_REQUEST['logout'])) {
