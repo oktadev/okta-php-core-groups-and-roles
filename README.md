@@ -1,8 +1,8 @@
-# Build Simple Login in PHP
+# PHP Authorization with OAuth 2.0 and Okta
 
 This example shows how to create a PHP application with user authentication from scratch in PHP, using Okta OAuth 2.0 to handle user registration/login/logout/forgot password.
 
-Please read [Build Simple Login in PHP](https://developer.okta.com/blog/2018/12/28/simple-login-php) to see how this application was built.
+Please read [PHP Authorization with OAuth 2.0 and Okta](https://developer.okta.com/blog/2019/08/30/php-authorization-with-oauth-2-and-okta) to see how this application was built.
 
 **Prerequisites:** PHP, Composer, [Okta developer account](https://developer.okta.com/)
 
@@ -13,8 +13,8 @@ Please read [Build Simple Login in PHP](https://developer.okta.com/blog/2018/12/
 Clone this project using the following commands:
 
 ```
-git clone git@github.com:oktadeveloper/okta-php-core-login-example.git
-cd okta-php-core-login-example
+git clone git@github.com:oktadeveloper/okta-php-core-groups-and-roles.git
+cd okta-php-core-groups-and-roles
 ```
 
 ### Configure the application
@@ -38,7 +38,7 @@ Then open `http://localhost:8080` and you will see the application.
 
 ## Help
 
-Please post any questions as comments on the <article link>, or visit our [Okta Developer Forums](https://devforum.okta.com/). You can also email developers@okta.com if would like to create a support ticket.
+Please post any questions as comments on the [blog post](https://developer.okta.com/blog/2019/08/30/php-authorization-with-oauth-2-and-okta), or visit our [Okta Developer Forums](https://devforum.okta.com/).
 
 ## License
 
